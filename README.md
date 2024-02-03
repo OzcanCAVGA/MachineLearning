@@ -1005,5 +1005,4 @@ new_labels
 ![Untitled](3Cluster%20d6559f0b493e4cd5b0ff4a1f4d8aa515/Untitled%206.png)
 
 > Bu çıktı, her bir veri noktasının hangi kümeye atandığını gösteren etiketleri içerir. Her bir etiket, o veri noktasının hangi kümeye ait olduğunu belirtir. Örneğin, new_labels dizisinin ilk elemanı 3 ise, ilk veri noktasının 4. kümeye ait olduğunu gösterir. Bu etiketler, KMeans algoritması tarafından belirlenen kümeleri temsil eder. Etiketler, her bir veri noktasını ilgili kümelere atayarak kümeleme işlemini gerçekleştirir.
->#   M a c h i n e L e a r n i n g  
- 
+>#
