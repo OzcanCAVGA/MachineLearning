@@ -194,25 +194,24 @@ df['eksik_kolon'].fillna(df['eksik_kolon'].mean(), inplace=True)
     house.drop("ocean_proximity", axis=1).corr()
     ```
     
-    > # **ocean_proximity** sutunu icin herhangi bir corelasyon yapamayacagimiz icin once onu kaldiriyoruz. 
-    # Daha sonra .corr() fonksiyonunu cagiriyoruz ve her alanin kendi iclerindeki corelasyonunu hesapliyoruz.
-    # korelasyon katsayilari +1 ile -1 arasinda degeri vardir. 
-    # +1'e yakin olan bir degerde, iki degisken arasinda guclu bir korelasyonun oldugunu gosterir. 
-    # Bir degiskenin degeri artarken, diger degiskende onunla beraber arttigini gosterir. Bu iyidir.
+    >  **ocean_proximity** sutunu icin herhangi bir corelasyon yapamayacagimiz icin once onu kaldiriyoruz. 
+    > Daha sonra .corr() fonksiyonunu cagiriyoruz ve her alanin kendi iclerindeki corelasyonunu hesapliyoruz.
+    > korelasyon katsayilari +1 ile -1 arasinda degeri vardir. 
+    > +1'e yakin olan bir degerde, iki degisken arasinda guclu bir korelasyonun oldugunu gosterir. 
+    > Bir degiskenin degeri artarken, diger degiskende onunla beraber arttigini gosterir. Bu iyidir.
     
-    # -1'e yaklasan negatif bir korelasyon ise iki degisken arasinda guclu bir bag olmadiigini, birisi artarken
-    #digerinin de azaldigini gosterir. Guclu bir dogrusal iliski vardir.
+    > -1'e yaklasan negatif bir korelasyon ise iki degisken arasinda guclu bir bag olmadiigini, birisi artarken digerinin de azaldigini gosterir. Guclu bir dogrusal iliski vardir.
     
-    # 0'a yakin korelasyonda ise iki degisken arasindaki bagin zayif oldugunu gosterir.
-    > 
+    > 0'a yakin korelasyonda ise iki degisken arasindaki bagin zayif oldugunu gosterir.
+     
     
     ![Untitled](1Regresyon%209b4f6322feb64b9e8591e410ddb86c73/Untitled%204.png)
     
     > Örneğin, **median_house_value** (ortalama ev değeri) ile **median_income** (ortalama gelir) arasında **0.688** olan **pozitif bir korelasyon** var. Bu değer, ortalama gelir ile ev değeri arasında orta düzeyde pozitif bir ilişki olduğunu gösterir. Yani, genellikle **ortalama gelir arttıkça ev değeri de artma** eğilimindedir.
-    > 
+    
     
     > **longitude** ve **latitude** arasında **-0.92** olan güçlü **negatif bir korelasyon** vardır. Bu, coğrafi olarak birbirine yakın bölgelerin koordinatları arasında **güçlü bir ters ilişki** olduğunu gösterir. Yani, enlem ve boylam arasında **güçlü bir ters ilişki** vardır, yani biri artarken diğeri azalma eğilimindedir.
-    > 
+    
     
     ### Korelasyon Haritasini cizmek istersekte eger:
     
